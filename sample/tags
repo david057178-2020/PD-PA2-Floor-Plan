@@ -1,0 +1,69 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Block	src/module.h	/^    Block(string& name, size_t w, size_t h) :$/;"	f	class:Block
+Block	src/module.h	/^class Block : public Terminal$/;"	c
+CC	Makefile	/^CC=g++$/;"	m
+EXECUTABLE	Makefile	/^EXECUTABLE=fp$/;"	m
+Floorplanner	src/floorplanner.h	/^	Floorplanner(fstream& input_blk, fstream& input_net, double& alpha):$/;"	f	class:Floorplanner
+Floorplanner	src/floorplanner.h	/^class Floorplanner$/;"	c
+INCLUDES	Makefile	/^INCLUDES=src\/module.h src\/floorplanner.h$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=-std=c++11 -O3 -lm$/;"	m
+MODULE_H	src/module.h	2;"	d
+Net	src/module.h	/^    Net()   { }$/;"	f	class:Net
+Net	src/module.h	/^class Net$/;"	c
+OBJECTS	Makefile	/^OBJECTS=$(SOURCES:.c=.o)$/;"	m
+SOURCES	Makefile	/^SOURCES=src\/floorplanner.cpp src\/main.cpp$/;"	m
+Terminal	src/module.h	/^    Terminal(string& name, size_t x, size_t y) :$/;"	f	class:Terminal
+Terminal	src/module.h	/^class Terminal$/;"	c
+_alpha	src/floorplanner.h	/^	double _alpha;$/;"	m	class:Floorplanner
+_blockArray	src/floorplanner.h	/^	vector<Block*> _blockArray;$/;"	m	class:Floorplanner
+_h	src/module.h	/^    size_t          _h;         \/\/ height of the block$/;"	m	class:Block
+_maxX	src/module.h	/^    static size_t   _maxX;      \/\/ maximum x coordinate for all blocks$/;"	m	class:Block
+_maxY	src/module.h	/^    static size_t   _maxY;      \/\/ maximum y coordinate for all blocks$/;"	m	class:Block
+_name	src/module.h	/^    string      _name;      \/\/ module name$/;"	m	class:Terminal
+_netArray	src/floorplanner.h	/^	vector<Net*> _netArray;$/;"	m	class:Floorplanner
+_numBlocks	src/floorplanner.h	/^	int _numBlocks;$/;"	m	class:Floorplanner
+_numTerminals	src/floorplanner.h	/^	int _numTerminals;$/;"	m	class:Floorplanner
+_outline_h	src/floorplanner.h	/^	int _outline_h;$/;"	m	class:Floorplanner
+_outline_w	src/floorplanner.h	/^	int _outline_w;$/;"	m	class:Floorplanner
+_termList	src/module.h	/^    vector<Terminal*>   _termList;  \/\/ list of terminals the net is connected to$/;"	m	class:Net
+_terminalArray	src/floorplanner.h	/^	vector<Terminal*> _terminalArray;$/;"	m	class:Floorplanner
+_w	src/module.h	/^    size_t          _w;         \/\/ width of the block$/;"	m	class:Block
+_x1	src/module.h	/^    size_t      _x1;        \/\/ min x coordinate of the terminal$/;"	m	class:Terminal
+_x2	src/module.h	/^    size_t      _x2;        \/\/ max x coordinate of the terminal$/;"	m	class:Terminal
+_y1	src/module.h	/^    size_t      _y1;        \/\/ min y coordinate of the terminal$/;"	m	class:Terminal
+_y2	src/module.h	/^    size_t      _y2;        \/\/ max y coordinate of the terminal$/;"	m	class:Terminal
+addTerm	src/module.h	/^    void addTerm(Terminal* term) { _termList.push_back(term); }$/;"	f	class:Net
+clear	src/floorplanner.cpp	/^void Floorplanner::clear()$/;"	f	class:Floorplanner
+floorplan	src/floorplanner.cpp	/^void Floorplanner::floorplan()$/;"	f	class:Floorplanner
+getArea	src/module.h	/^    const size_t getArea()  { return _h * _w; }$/;"	f	class:Block
+getHeight	src/module.h	/^    const size_t getHeight(bool rotate = false) { return rotate? _w: _h; }$/;"	f	class:Block
+getMaxX	src/module.h	/^    static size_t getMaxX() { return _maxX; }$/;"	f	class:Block
+getMaxY	src/module.h	/^    static size_t getMaxY() { return _maxY; }$/;"	f	class:Block
+getName	src/module.h	/^    const string getName()  { return _name; }$/;"	f	class:Terminal
+getTermList	src/module.h	/^    const vector<Terminal*> getTermList()   { return _termList; }$/;"	f	class:Net
+getTokens	src/floorplanner.cpp	/^void getTokens$/;"	f
+getWidth	src/module.h	/^    const size_t getWidth(bool rotate = false)  { return rotate? _h: _w; }$/;"	f	class:Block
+getX1	src/module.h	/^    const size_t getX1()    { return _x1; }$/;"	f	class:Terminal
+getX2	src/module.h	/^    const size_t getX2()    { return _x2; }$/;"	f	class:Terminal
+getY1	src/module.h	/^    const size_t getY1()    { return _y1; }$/;"	f	class:Terminal
+getY2	src/module.h	/^    const size_t getY2()    { return _y2; }$/;"	f	class:Terminal
+main	src/main.cpp	/^int main(int argc, char** argv)$/;"	f
+myStrGetTok	src/floorplanner.cpp	/^size_t myStrGetTok$/;"	f
+parseInput	src/floorplanner.cpp	/^void Floorplanner::parseInput$/;"	f	class:Floorplanner
+printInfo	src/floorplanner.cpp	/^void Floorplanner::printInfo()$/;"	f	class:Floorplanner
+setHeight	src/module.h	/^    void setHeight(size_t h)        { _h = h; }$/;"	f	class:Block
+setMaxX	src/module.h	/^    static void setMaxX(size_t x)   { _maxX = x; }$/;"	f	class:Block
+setMaxY	src/module.h	/^    static void setMaxY(size_t y)   { _maxY = y; }$/;"	f	class:Block
+setName	src/module.h	/^    void setName(string& name) { _name = name; }$/;"	f	class:Terminal
+setPos	src/module.h	/^    void setPos(size_t x1, size_t y1, size_t x2, size_t y2) {$/;"	f	class:Terminal
+setWidth	src/module.h	/^    void setWidth(size_t w)         { _w = w; }$/;"	f	class:Block
+writeResult	src/floorplanner.cpp	/^void Floorplanner::writeResult(fstream& outFile)$/;"	f	class:Floorplanner
+~Block	src/module.h	/^    ~Block() { }$/;"	f	class:Block
+~Floorplanner	src/floorplanner.h	/^	~Floorplanner(){$/;"	f	class:Floorplanner
+~Net	src/module.h	/^    ~Net()  { }$/;"	f	class:Net
+~Terminal	src/module.h	/^    ~Terminal()  { }$/;"	f	class:Terminal
